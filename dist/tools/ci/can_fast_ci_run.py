@@ -135,10 +135,8 @@ def classify_changes(riotbase=None, upstream_branch="master"):
     Runs the given compiler with -v -E on an no-op compilation unit and parses the built-in
     include search directories and the GCC version from the output
 
-    :param args: parse command line arguments
-    :type args: dict
-    :param pr_branch: name of the PR branch
-    :type pr_branch: str
+    :param riotbase: path of the RIOT base directory
+    :type riotbase: str
     :param upstream_branch: name of the main upstream branch the PR should be merged into
     :type upstream_branch: str
 
